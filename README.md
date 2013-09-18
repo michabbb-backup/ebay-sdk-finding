@@ -1,0 +1,4 @@
+# EBAY-API-SDK-FINDING
+
+## License
+MIT
