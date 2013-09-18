@@ -1,4 +1,4 @@
-# EBAY-API-SDK-FINDING
+# EBAY-SDK-FINDING
 
 ## License
 MIT
