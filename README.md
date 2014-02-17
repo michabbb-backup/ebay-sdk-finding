@@ -49,7 +49,6 @@ This package can be install with [Composer](http://getcomposer.org/).
 ```php
 <?php
 
-require 'autoload.php';
 require 'vendor/autoload.php';
 
 use \DTS\eBaySDK\Finding\Services\FindingService;
