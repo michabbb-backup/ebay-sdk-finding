@@ -1,14 +1,12 @@
 <?php
-
 use DTS\eBaySDK\Finding\Services\FindingBaseService;
+use DTS\eBaySDK\Mocks\HttpClient;
 
 class FindingBaseServiceTest extends \PHPUnit_Framework_TestCase
 {
-    private $obj;
-
     protected function setUp()
     {
-        $this->obj = new FindingBaseService();
+        $this->obj = new FindingBaseService(new HttpClient());
     }
 
     public function testCanBeCreated()
