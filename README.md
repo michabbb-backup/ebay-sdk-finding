@@ -1,6 +1,6 @@
 # EBAY-SDK-FINDING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-trading)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
 
 An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
 
@@ -12,7 +12,7 @@ An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
 
 ## Installation
 
-This package can be install with [Composer](http://getcomposer.org/).
+This package can be installed with [Composer](http://getcomposer.org/).
 
 1. Add "dts/ebay-sdk-finding" as a dependency in your project's composer.json file.
 
