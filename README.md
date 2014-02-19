@@ -14,12 +14,12 @@ An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
 
 This package can be install with [Composer](http://getcomposer.org/).
 
-1. Add "dts/ebay-sdk" as a dependency in your project's composer.json file.
+1. Add "dts/ebay-sdk-finding" as a dependency in your project's composer.json file.
 
    ```javascript
    {
        "require": {
-           "dts/ebay-sdk": "~0.0.0"
+           "dts/ebay-sdk-finding": "~0.0.0"
        }
    }
    ```
@@ -85,7 +85,7 @@ $filter->name = 'MaxPrice';
 $filter->value[] = '10.00';
 $request->itemFilter[] = $filter;
 
-// Sort results from low to high price.
+// Sort results from high to low price.
 $request->sortOrder = 'CurrentPriceHighest';
 
 // Send the request.
