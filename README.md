@@ -96,3 +96,7 @@ foreach ($response->searchResult->item as $item) {
     printf("(%s) %s : %.2f\n", $item->itemId, $item->title, $item->sellingStatus->currentPrice->value);
 }
 ```
+
+## SDK and eBay API versions.
+
+As eBay release new versions of their API the corresponding SDK version will be shown [here](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions#wiki-finding).
