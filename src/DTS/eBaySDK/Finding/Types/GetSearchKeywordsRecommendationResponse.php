@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\ExtensionType $extension
  * @property string $keywords
  */
 class GetSearchKeywordsRecommendationResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceResponse
@@ -28,12 +27,6 @@ class GetSearchKeywordsRecommendationResponse extends \DTS\eBaySDK\Finding\Types
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'extension' => array(
-            'type' => 'DTS\eBaySDK\Finding\Types\ExtensionType',
-            'unbound' => true,
-            'attribute' => false,
-            'elementName' => 'extension'
-        ),
         'keywords' => array(
             'type' => 'string',
             'unbound' => false,

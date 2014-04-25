@@ -19,10 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $contentType
- * @property DTS\eBaySDK\Finding\Types\PositiveInteger $id
- * @property string $value
- * @property string $version
  */
 class ExtensionType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -30,30 +26,6 @@ class ExtensionType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'contentType' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'contentType'
-        ),
-        'id' => array(
-            'type' => 'DTS\eBaySDK\Finding\Types\PositiveInteger',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'id'
-        ),
-        'value' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'value'
-        ),
-        'version' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'version'
-        )
     );
 
     /**

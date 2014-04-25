@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\ExtensionType $extension
  * @property string $itemSearchUrl
  * @property DTS\eBaySDK\Finding\Types\PaginationOutput $paginationOutput
  * @property DTS\eBaySDK\Finding\Types\SearchResult $searchResult
@@ -30,12 +29,6 @@ class BaseFindingServiceResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceR
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'extension' => array(
-            'type' => 'DTS\eBaySDK\Finding\Types\ExtensionType',
-            'unbound' => true,
-            'attribute' => false,
-            'elementName' => 'extension'
-        ),
         'itemSearchUrl' => array(
             'type' => 'string',
             'unbound' => false,
