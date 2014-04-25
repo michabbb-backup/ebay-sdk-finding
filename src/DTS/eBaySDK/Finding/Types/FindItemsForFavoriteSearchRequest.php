@@ -20,9 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property DTS\eBaySDK\Finding\Types\PaginationInput $paginationInput
- * @property integer $searchId
- * @property string $searchName
- * @property DateTime $startTimeFrom
  */
 class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseServiceRequest
 {
@@ -35,24 +32,6 @@ class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseS
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'paginationInput'
-        ),
-        'searchId' => array(
-            'type' => 'integer',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'searchId'
-        ),
-        'searchName' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'searchName'
-        ),
-        'startTimeFrom' => array(
-            'type' => 'DateTime',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'startTimeFrom'
         )
     );
 

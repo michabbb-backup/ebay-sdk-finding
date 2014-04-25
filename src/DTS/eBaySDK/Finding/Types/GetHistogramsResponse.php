@@ -22,7 +22,6 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property DTS\eBaySDK\Finding\Types\AspectHistogramContainer $aspectHistogramContainer
  * @property DTS\eBaySDK\Finding\Types\CategoryHistogramContainer $categoryHistogramContainer
  * @property DTS\eBaySDK\Finding\Types\ConditionHistogramContainer $conditionHistogramContainer
- * @property DTS\eBaySDK\Finding\Types\ExtensionType $extension
  */
 class GetHistogramsResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceResponse
 {
@@ -47,12 +46,6 @@ class GetHistogramsResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceRespon
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'conditionHistogramContainer'
-        ),
-        'extension' => array(
-            'type' => 'DTS\eBaySDK\Finding\Types\ExtensionType',
-            'unbound' => true,
-            'attribute' => false,
-            'elementName' => 'extension'
         )
     );
 
