@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property DTS\eBaySDK\Finding\Types\ItemFilter $itemFilter
- * @property DTS\eBaySDK\Finding\Types\OutputSelectorType(string) $outputSelector
+ * @property DTS\eBaySDK\Finding\Enums\OutputSelectorType(string) $outputSelector
  * @property DTS\eBaySDK\Finding\Types\ProductId $productId
  */
 class FindItemsByProductRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest

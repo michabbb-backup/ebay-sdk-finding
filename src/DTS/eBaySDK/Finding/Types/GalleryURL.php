@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\GallerySizeEnum(string) $gallerySize
+ * @property DTS\eBaySDK\Finding\Enums\GallerySizeEnum(string) $gallerySize
  */
 class GalleryURL extends \DTS\eBaySDK\Types\URIType
 {

@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\SortOrderType(string) $sortOrder
+ * @property DTS\eBaySDK\Finding\Enums\SortOrderType(string) $sortOrder
  */
 class BaseFindingServiceRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindingServiceRequest
 {
