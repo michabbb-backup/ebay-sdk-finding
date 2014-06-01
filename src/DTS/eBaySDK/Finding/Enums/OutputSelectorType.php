@@ -22,13 +22,13 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class OutputSelectorType
 {
-    const ASPECT_HISTOGRAM = 'AspectHistogram';
-    const CATEGORY_HISTOGRAM = 'CategoryHistogram';
-    const CONDITION_HISTOGRAM = 'ConditionHistogram';
-    const GALLERY_INFO = 'GalleryInfo';
-    const PICTUREURL_LARGE = 'PictureURLLarge';
-    const PICTUREURL_SUPER_SIZE = 'PictureURLSuperSize';
-    const SELLER_INFO = 'SellerInfo';
-    const STORE_INFO = 'StoreInfo';
-    const UNIT_PRICE_INFO = 'UnitPriceInfo';
+    const C_ASPECT_HISTOGRAM = 'AspectHistogram';
+    const C_CATEGORY_HISTOGRAM = 'CategoryHistogram';
+    const C_CONDITION_HISTOGRAM = 'ConditionHistogram';
+    const C_GALLERY_INFO = 'GalleryInfo';
+    const C_PICTUREURL_LARGE = 'PictureURLLarge';
+    const C_PICTUREURL_SUPER_SIZE = 'PictureURLSuperSize';
+    const C_SELLER_INFO = 'SellerInfo';
+    const C_STORE_INFO = 'StoreInfo';
+    const C_UNIT_PRICE_INFO = 'UnitPriceInfo';
 }

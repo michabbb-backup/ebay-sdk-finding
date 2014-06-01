@@ -22,15 +22,15 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class SortOrderType
 {
-    const BEST_MATCH = 'BestMatch';
-    const BID_COUNT_FEWEST = 'BidCountFewest';
-    const BID_COUNT_MOST = 'BidCountMost';
-    const COUNTRY_ASCENDING = 'CountryAscending';
-    const COUNTRY_DESCENDING = 'CountryDescending';
-    const CURRENT_PRICE_HIGHEST = 'CurrentPriceHighest';
-    const DISTANCE_NEAREST = 'DistanceNearest';
-    const END_TIME_SOONEST = 'EndTimeSoonest';
-    const PRICE_PLUS_SHIPPING_HIGHEST = 'PricePlusShippingHighest';
-    const PRICE_PLUS_SHIPPING_LOWEST = 'PricePlusShippingLowest';
-    const START_TIME_NEWEST = 'StartTimeNewest';
+    const C_BEST_MATCH = 'BestMatch';
+    const C_BID_COUNT_FEWEST = 'BidCountFewest';
+    const C_BID_COUNT_MOST = 'BidCountMost';
+    const C_COUNTRY_ASCENDING = 'CountryAscending';
+    const C_COUNTRY_DESCENDING = 'CountryDescending';
+    const C_CURRENT_PRICE_HIGHEST = 'CurrentPriceHighest';
+    const C_DISTANCE_NEAREST = 'DistanceNearest';
+    const C_END_TIME_SOONEST = 'EndTimeSoonest';
+    const C_PRICE_PLUS_SHIPPING_HIGHEST = 'PricePlusShippingHighest';
+    const C_PRICE_PLUS_SHIPPING_LOWEST = 'PricePlusShippingLowest';
+    const C_START_TIME_NEWEST = 'StartTimeNewest';
 }

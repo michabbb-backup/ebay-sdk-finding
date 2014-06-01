@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class ErrorCategory
 {
-    const APPLICATION = 'Application';
-    const REQUEST = 'Request';
-    const SYSTEM = 'System';
+    const C_APPLICATION = 'Application';
+    const C_REQUEST = 'Request';
+    const C_SYSTEM = 'System';
 }
