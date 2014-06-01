@@ -1,6 +1,6 @@
 # EBAY-SDK-FINDING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.png?branch=master)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
 
 An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
 
