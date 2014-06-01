@@ -22,6 +22,6 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class ErrorSeverity
 {
-    const ERROR = 'Error';
-    const WARNING = 'Warning';
+    const C_ERROR = 'Error';
+    const C_WARNING = 'Warning';
 }

@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class GallerySizeEnum
 {
-    const LARGE = 'Large';
-    const MEDIUM = 'Medium';
-    const SMALL = 'Small';
+    const C_LARGE = 'Large';
+    const C_MEDIUM = 'Medium';
+    const C_SMALL = 'Small';
 }
