@@ -20,9 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property DTS\eBaySDK\Finding\Types\PaginationInput $paginationInput
- * @property integer $searchId
- * @property string $searchName
- * @property DateTime $startTimeFrom
  */
 class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseServiceRequest
 {
@@ -35,24 +32,6 @@ class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseS
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'paginationInput'
-        ),
-        'searchId' => array(
-            'type' => 'integer',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'searchId'
-        ),
-        'searchName' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'searchName'
-        ),
-        'startTimeFrom' => array(
-            'type' => 'DateTime',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'startTimeFrom'
         )
     );
 
@@ -61,12 +40,18 @@ class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseS
      */
     public function __construct(array $values = array())
     {
-        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
+        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
+
+        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+        }
+
+        if (!array_key_exists(__CLASS__, self::$elementNames)) {
+            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

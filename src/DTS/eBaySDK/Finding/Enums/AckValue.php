@@ -22,8 +22,8 @@ namespace DTS\eBaySDK\Finding\Enums;
  */
 class AckValue
 {
-    const FAILURE = 'Failure';
-    const PARTIAL_FAILURE = 'PartialFailure';
-    const SUCCESS = 'Success';
-    const WARNING = 'Warning';
+    const C_FAILURE = 'Failure';
+    const C_PARTIAL_FAILURE = 'PartialFailure';
+    const C_SUCCESS = 'Success';
+    const C_WARNING = 'Warning';
 }

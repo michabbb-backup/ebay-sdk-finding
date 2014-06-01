@@ -4,6 +4,8 @@
 
 An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
 
+More information can be found in the [wiki](https://github.com/davidtsadler/ebay-sdk-finding/wiki).
+
 ## Requirements
 
 - PHP 5.3 or greater.
