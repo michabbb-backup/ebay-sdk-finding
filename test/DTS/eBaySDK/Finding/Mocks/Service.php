@@ -3,9 +3,9 @@ namespace DTS\eBaySDK\Finding\Mocks;
 
 class Service extends \DTS\eBaySDK\Finding\Services\FindingBaseService
 {
-    public function __construct(\DTS\eBaySDK\Interfaces\HttpClientInterface $httpClient, $config = array())
+    public function __construct($config = array(), \DTS\eBaySDK\Interfaces\HttpClientInterface $httpClient = null)
     {
-        parent::__construct($httpClient, $config);
+        parent::__construct($config, $httpClient);
     }
 
     public function testOperation()
