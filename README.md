@@ -58,10 +58,9 @@ use \DTS\eBaySDK\Finding\Types\FindItemsByKeywordsRequest;
 use \DTS\eBaySDK\Finding\Types\PaginationInput;
 use \DTS\eBaySDK\Finding\Types\ItemFilter;
 use \DTS\eBaySDK\Constants\GlobalIds;
-use \DTS\eBaySDK\HttpClient\HttpClient;
 
 // Instantiate an eBay service.
-$service = new FindingService(new HttpClient(), array(
+$service = new FindingService(array(
     'appId' => <enter your eBay App Id>,
     'globalId' => GlobalIds::US
 ));
