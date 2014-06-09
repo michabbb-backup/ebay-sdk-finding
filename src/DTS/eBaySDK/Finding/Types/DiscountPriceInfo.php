@@ -19,9 +19,9 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Enums\MapExposureEnum(string) $minimumAdvertisedPriceExposure
- * @property DTS\eBaySDK\Finding\Types\Amount $originalRetailPrice
- * @property DTS\eBaySDK\Finding\Enums\PriceTreatmentEnum(string) $pricingTreatment
+ * @property \DTS\eBaySDK\Finding\Enums\MapExposureEnum(string) $minimumAdvertisedPriceExposure
+ * @property \DTS\eBaySDK\Finding\Types\Amount $originalRetailPrice
+ * @property \DTS\eBaySDK\Finding\Enums\PriceTreatmentEnum(string) $pricingTreatment
  * @property boolean $soldOffEbay
  * @property boolean $soldOnEbay
  */

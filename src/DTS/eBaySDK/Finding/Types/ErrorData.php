@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Enums\ErrorCategory(string) $category
+ * @property \DTS\eBaySDK\Finding\Enums\ErrorCategory(string) $category
  * @property string $domain
  * @property integer $errorId
  * @property string $exceptionId
  * @property string $message
- * @property DTS\eBaySDK\Finding\Types\ErrorParameter $parameter
- * @property DTS\eBaySDK\Finding\Enums\ErrorSeverity(string) $severity
+ * @property \DTS\eBaySDK\Finding\Types\ErrorParameter $parameter
+ * @property \DTS\eBaySDK\Finding\Enums\ErrorSeverity(string) $severity
  * @property string $subdomain
  */
 class ErrorData extends \DTS\eBaySDK\Types\BaseType

@@ -21,7 +21,7 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property integer $count
  * @property string $delimiter
- * @property DTS\eBaySDK\Finding\Types\SearchItem $item
+ * @property \DTS\eBaySDK\Finding\Types\SearchItem $item
  */
 class SearchResult extends \DTS\eBaySDK\Types\BaseType
 {

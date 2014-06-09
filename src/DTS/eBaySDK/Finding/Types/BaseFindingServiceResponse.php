@@ -20,8 +20,8 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property string $itemSearchURL
- * @property DTS\eBaySDK\Finding\Types\PaginationOutput $paginationOutput
- * @property DTS\eBaySDK\Finding\Types\SearchResult $searchResult
+ * @property \DTS\eBaySDK\Finding\Types\PaginationOutput $paginationOutput
+ * @property \DTS\eBaySDK\Finding\Types\SearchResult $searchResult
  */
 class BaseFindingServiceResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceResponse
 {

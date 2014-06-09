@@ -21,7 +21,7 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property string $delimiter
  * @property string $name
- * @property DTS\eBaySDK\Finding\Types\AspectValueHistogram $valueHistogram
+ * @property \DTS\eBaySDK\Finding\Types\AspectValueHistogram $valueHistogram
  */
 class Aspect extends \DTS\eBaySDK\Types\BaseType
 {

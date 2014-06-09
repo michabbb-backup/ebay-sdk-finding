@@ -19,8 +19,8 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\AspectHistogramContainer $aspectHistogramContainer
- * @property DTS\eBaySDK\Finding\Types\ConditionHistogramContainer $conditionHistogramContainer
+ * @property \DTS\eBaySDK\Finding\Types\AspectHistogramContainer $aspectHistogramContainer
+ * @property \DTS\eBaySDK\Finding\Types\ConditionHistogramContainer $conditionHistogramContainer
  */
 class FindItemsByProductResponse extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceResponse
 {

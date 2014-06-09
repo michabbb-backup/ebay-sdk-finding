@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\PaginationInput $paginationInput
+ * @property \DTS\eBaySDK\Finding\Types\PaginationInput $paginationInput
  */
 class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseServiceRequest
 {

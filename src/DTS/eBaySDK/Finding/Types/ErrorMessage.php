@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\ErrorData $error
+ * @property \DTS\eBaySDK\Finding\Types\ErrorData $error
  */
 class ErrorMessage extends \DTS\eBaySDK\Types\BaseType
 {
