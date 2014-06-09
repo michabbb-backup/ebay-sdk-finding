@@ -20,8 +20,8 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property integer $bidCount
- * @property DTS\eBaySDK\Finding\Types\Amount $convertedCurrentPrice
- * @property DTS\eBaySDK\Finding\Types\Amount $currentPrice
+ * @property \DTS\eBaySDK\Finding\Types\Amount $convertedCurrentPrice
+ * @property \DTS\eBaySDK\Finding\Types\Amount $currentPrice
  * @property string $delimiter
  * @property string $sellingState
  * @property string $timeLeft

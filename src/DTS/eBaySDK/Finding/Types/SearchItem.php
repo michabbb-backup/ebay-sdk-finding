@@ -19,39 +19,39 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\ItemAttribute $attribute
+ * @property \DTS\eBaySDK\Finding\Types\ItemAttribute $attribute
  * @property boolean $autoPay
  * @property string $charityId
  * @property string $compatibility
- * @property DTS\eBaySDK\Finding\Types\Condition $condition
+ * @property \DTS\eBaySDK\Finding\Types\Condition $condition
  * @property string $country
  * @property string $delimiter
- * @property DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
- * @property DTS\eBaySDK\Finding\Types\Distance $distance
- * @property DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
+ * @property \DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
+ * @property \DTS\eBaySDK\Finding\Types\Distance $distance
+ * @property \DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
  * @property string $galleryPlusPictureURL
  * @property string $galleryURL
  * @property string $globalId
  * @property boolean $isMultiVariationListing
  * @property string $itemId
- * @property DTS\eBaySDK\Finding\Types\ListingInfo $listingInfo
+ * @property \DTS\eBaySDK\Finding\Types\ListingInfo $listingInfo
  * @property string $location
  * @property string $paymentMethod
  * @property string $pictureURLLarge
  * @property string $pictureURLSuperSize
  * @property string $postalCode
- * @property DTS\eBaySDK\Finding\Types\Category $primaryCategory
- * @property DTS\eBaySDK\Finding\Types\ProductId $productId
+ * @property \DTS\eBaySDK\Finding\Types\Category $primaryCategory
+ * @property \DTS\eBaySDK\Finding\Types\ProductId $productId
  * @property boolean $returnsAccepted
- * @property DTS\eBaySDK\Finding\Types\Category $secondaryCategory
- * @property DTS\eBaySDK\Finding\Types\SellerInfo $sellerInfo
- * @property DTS\eBaySDK\Finding\Types\SellingStatus $sellingStatus
- * @property DTS\eBaySDK\Finding\Types\ShippingInfo $shippingInfo
- * @property DTS\eBaySDK\Finding\Types\Storefront $storeInfo
+ * @property \DTS\eBaySDK\Finding\Types\Category $secondaryCategory
+ * @property \DTS\eBaySDK\Finding\Types\SellerInfo $sellerInfo
+ * @property \DTS\eBaySDK\Finding\Types\SellingStatus $sellingStatus
+ * @property \DTS\eBaySDK\Finding\Types\ShippingInfo $shippingInfo
+ * @property \DTS\eBaySDK\Finding\Types\Storefront $storeInfo
  * @property string $subtitle
  * @property string $title
  * @property boolean $topRatedListing
- * @property DTS\eBaySDK\Finding\Types\UnitPriceInfo $unitPrice
+ * @property \DTS\eBaySDK\Finding\Types\UnitPriceInfo $unitPrice
  * @property string $viewItemURL
  */
 class SearchItem extends \DTS\eBaySDK\Types\BaseType

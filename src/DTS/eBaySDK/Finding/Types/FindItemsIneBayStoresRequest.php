@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\AspectFilter $aspectFilter
+ * @property \DTS\eBaySDK\Finding\Types\AspectFilter $aspectFilter
  * @property string $categoryId
- * @property DTS\eBaySDK\Finding\Types\DomainFilter $domainFilter
- * @property DTS\eBaySDK\Finding\Types\ItemFilter $itemFilter
+ * @property \DTS\eBaySDK\Finding\Types\DomainFilter $domainFilter
+ * @property \DTS\eBaySDK\Finding\Types\ItemFilter $itemFilter
  * @property string $keywords
- * @property DTS\eBaySDK\Finding\Enums\OutputSelectorType(string) $outputSelector
+ * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType(string) $outputSelector
  * @property string $storeName
  */
 class FindItemsIneBayStoresRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest

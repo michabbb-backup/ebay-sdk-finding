@@ -21,13 +21,13 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property boolean $bestOfferEnabled
  * @property boolean $buyItNowAvailable
- * @property DTS\eBaySDK\Finding\Types\Amount $buyItNowPrice
- * @property DTS\eBaySDK\Finding\Types\Amount $convertedBuyItNowPrice
+ * @property \DTS\eBaySDK\Finding\Types\Amount $buyItNowPrice
+ * @property \DTS\eBaySDK\Finding\Types\Amount $convertedBuyItNowPrice
  * @property string $delimiter
- * @property DateTime $endTime
+ * @property \DateTime $endTime
  * @property boolean $gift
  * @property string $listingType
- * @property DateTime $startTime
+ * @property \DateTime $startTime
  */
 class ListingInfo extends \DTS\eBaySDK\Types\BaseType
 {

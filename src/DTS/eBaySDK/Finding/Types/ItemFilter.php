@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property string $delimiter
- * @property DTS\eBaySDK\Finding\Enums\ItemFilterType(string) $name
+ * @property \DTS\eBaySDK\Finding\Enums\ItemFilterType(string) $name
  * @property string $paramName
  * @property string $paramValue
  * @property string $value

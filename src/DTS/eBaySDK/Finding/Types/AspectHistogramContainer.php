@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\Aspect $aspect
+ * @property \DTS\eBaySDK\Finding\Types\Aspect $aspect
  * @property string $delimiter
  * @property string $domainDisplayName
  * @property string $domainName
