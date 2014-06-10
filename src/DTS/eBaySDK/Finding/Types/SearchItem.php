@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\ItemAttribute $attribute
+ * @property \DTS\eBaySDK\Finding\Types\ItemAttribute[] $attribute
  * @property boolean $autoPay
  * @property string $charityId
  * @property string $compatibility
@@ -29,14 +29,14 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property \DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
  * @property \DTS\eBaySDK\Finding\Types\Distance $distance
  * @property \DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
- * @property string $galleryPlusPictureURL
+ * @property string[] $galleryPlusPictureURL
  * @property string $galleryURL
  * @property string $globalId
  * @property boolean $isMultiVariationListing
  * @property string $itemId
  * @property \DTS\eBaySDK\Finding\Types\ListingInfo $listingInfo
  * @property string $location
- * @property string $paymentMethod
+ * @property string[] $paymentMethod
  * @property string $pictureURLLarge
  * @property string $pictureURLSuperSize
  * @property string $postalCode

@@ -20,10 +20,10 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property string $delimiter
- * @property \DTS\eBaySDK\Finding\Enums\ItemFilterType(string) $name
+ * @property \DTS\eBaySDK\Finding\Enums\ItemFilterType $name
  * @property string $paramName
  * @property string $paramValue
- * @property string $value
+ * @property string[] $value
  */
 class ItemFilter extends \DTS\eBaySDK\Types\BaseType
 {
