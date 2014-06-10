@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\ConditionHistogram $conditionHistogram
+ * @property \DTS\eBaySDK\Finding\Types\ConditionHistogram[] $conditionHistogram
  * @property string $delimiter
  */
 class ConditionHistogramContainer extends \DTS\eBaySDK\Types\BaseType

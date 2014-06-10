@@ -24,7 +24,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property integer $handlingTime
  * @property boolean $intermediatedShipping
  * @property boolean $oneDayShippingAvailable
- * @property string $shipToLocations
+ * @property string[] $shipToLocations
  * @property \DTS\eBaySDK\Finding\Types\Amount $shippingServiceCost
  * @property string $shippingType
  */

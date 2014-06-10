@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\GalleryURL $galleryURL
+ * @property \DTS\eBaySDK\Finding\Types\GalleryURL[] $galleryURL
  */
 class GalleryInfoContainer extends \DTS\eBaySDK\Types\BaseType
 {

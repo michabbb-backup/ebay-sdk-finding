@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\CategoryHistogram $childCategoryHistogram
+ * @property \DTS\eBaySDK\Finding\Types\CategoryHistogram[] $childCategoryHistogram
  * @property integer $count
  * @property string $delimiter
  */

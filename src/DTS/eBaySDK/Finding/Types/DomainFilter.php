@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property string $delimiter
- * @property string $domainName
+ * @property string[] $domainName
  */
 class DomainFilter extends \DTS\eBaySDK\Types\BaseType
 {
