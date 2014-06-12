@@ -1,48 +1,61 @@
 # EBAY-SDK-FINDING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.svg?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
 
-An eBay SDK for PHP. Use the eBay Finding API in your PHP projects.
+This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools/) in their PHP code, and build software using the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/installation/) and by following the [Getting Started Guide](http://devbay.net/sdk/guides/getting-started/).
 
-More information can be found in the [wiki](https://github.com/davidtsadler/ebay-sdk-finding/wiki).
+## Features
+
+  - Compatible with PHP 5.3.3 or greater.
+  - Easy to install with [Composer](http://getcomposer.org/).
+  - Compliant with [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md).
+
+## Resources
+
+  - [User Guides](http://devbay.net/sdk/guides/) - Getting started guide and in-depth information.
+  - [SDK Versions](http://devbay.net/sdk/guides/versions/) - A complete list of each SDK, and the API version they support.
+  - [Sample Project](https://github.com/davidtsadler/ebay-sdk-examples) - Provides several examples of using the SDK.
+  - [Google Group](https://groups.google.com/forum/#!forum/ebay-sdk-php) - Join for support with the SDK.
+  - [@devbaydotnet](https://twitter.com/devbaydotnet) - Follow on Twitter for announcements of releases, important changes and so on.
 
 ## Requirements
 
-- PHP 5.3 or greater.
-- cUrl extension enabled.
-- [dts/ebay-sdk](https://github.com/davidtsadler/ebay-sdk).
+  - PHP 5.3.3 or greater with the following extensions:
+      - cURL
+      - libxml
+  - SSL enabled on the cURL extension so that https requests can be made.
 
 ## Installation
 
-This package can be installed with [Composer](http://getcomposer.org/).
+This SDK can be installed with [Composer](http://getcomposer.org/).
 
-1. Add "dts/ebay-sdk-finding" as a dependency in your project's composer.json file.
+  1. Add `dts/ebay-sdk-finding` as a dependency in your project's composer.json file.
 
-   ```javascript
-   {
-       "require": {
-           "dts/ebay-sdk-finding": "~0.0.0"
-       }
-   }
-   ```
+     ```javascript
+     {
+         "require": {
+             "dts/ebay-sdk-finding": "~0.1"
+         }
+     }
+     ```
 
-1. Install Composer.
+  1. Install Composer.
 
-   ```
-   curl -sS https://getcomposer.org/installer | php
-   ```
+     ```
+     curl -sS https://getcomposer.org/installer | php
+     ```
 
-1. Install the dependencies.
+  1. Install the dependencies.
 
-   ```
-   php composer.phar install
-   ```
+     ```
+     php composer.phar install
+     ```
 
-1. Require Composer's autoloader by adding the following line to your code.
+  1. Require Composer's autoloader by adding the following line to your code.
 
-   ```php
-   require 'vendor/autoload.php';
-   ```
+     ```php
+     require 'vendor/autoload.php';
+     ```
 
 ## Example
 
@@ -53,51 +66,50 @@ This package can be installed with [Composer](http://getcomposer.org/).
 
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\Finding\Services\FindingService;
-use \DTS\eBaySDK\Finding\Types\FindItemsByKeywordsRequest;
-use \DTS\eBaySDK\Finding\Types\PaginationInput;
-use \DTS\eBaySDK\Finding\Types\ItemFilter;
-use \DTS\eBaySDK\Constants\GlobalIds;
+use \DTS\eBaySDK\Constants;
+use \DTS\eBaySDK\Finding\Services;
+use \DTS\eBaySDK\Finding\Types;
 
-// Instantiate an eBay service.
-$service = new FindingService(array(
-    'appId' => <enter your eBay App Id>,
-    'globalId' => GlobalIds::US
+// Create the service object.
+$service = new Services\FindingService(array(
+    'appId' => 'YOUR_PRODUCTION_APPID_APPLICATION_KEY',
+    'globalId' => Constants\GlobalIds::US
 ));
 
-// Create the API request object.
-$request = new FindItemsByKeywordsRequest();
+// Create the request object.
+$request = new Types\FindItemsByKeywordsRequest();
 
 $request->keywords = 'Harry Potter';
 
-// Ask for the first 25 items.
-$request->paginationInput = new PaginationInput();
-$request->paginationInput->entriesPerPage = 25;
-$request->paginationInput->pageNumber = 1;
-
-// Filter results to just fixed price items that are no more than $10.
-$filter = new ItemFilter();
-$filter->name = 'ListingType';
-$filter->value[] = 'FixedPrice';
-$request->itemFilter[] = $filter;
-
-$filter = new ItemFilter();
-$filter->name = 'MaxPrice';
-$filter->value[] = '10.00';
-$request->itemFilter[] = $filter;
-
-// Sort results from high to low price.
-$request->sortOrder = 'CurrentPriceHighest';
-
-// Send the request.
+// Send the request to the service operation.
 $response = $service->findItemsByKeywords($request);
 
-// Output the response from the API.
+// Output the result of calling the service operation.
 foreach ($response->searchResult->item as $item) {
-    printf("(%s) %s : %.2f\n", $item->itemId, $item->title, $item->sellingStatus->currentPrice->value);
+    printf("(%s) %s: %s %.2f\n",
+        $item->itemId,
+        $item->title,
+        $item->sellingStatus->currentPrice->currencyId,
+        $item->sellingStatus->currentPrice->value
+    );
 }
 ```
 
-## SDK and eBay API versions.
+## Project Goals
 
-As eBay release new versions of their API the corresponding SDK version will be shown [here](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions#wiki-finding).
+  - Be well maintained.
+  - Be [well documented](http://devbay.net/sdk/guides/).
+  - Be [well tested](https://github.com/davidtsadler/ebay-sdk-finding/tree/master/test/DTS/eBaySDK/Finding).
+  - Be well supported with [working examples](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/finding/README.md).
+
+## Project Maturity
+
+This is a personal project that has been developed by me, [David T. Sadler](http://twitter.com/davidtsadler). I decided to create this project to make up for the lack of an official SDK for PHP. It is in no way endorsed, sponsored or maintained by eBay.
+
+As this is a brand new project you should expect frequent releases until it reaches the stable `1.0.0` target. I will endeavour to keep changes to a minimum between each release and any changes will be [documented](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/ChangeLog.md).
+
+## License
+
+Licensed under the [Apache Public License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+Copyright 2014 [David T. Sadler](http://twitter.com/davidtsadler)
