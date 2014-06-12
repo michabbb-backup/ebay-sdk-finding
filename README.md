@@ -1,6 +1,6 @@
 # EBAY-SDK-FINDING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.svg?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-finding.svg?branch=master)](https://travis-ci.org/davidtsadler/ebay-sdk-finding)
 
 This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools/) in their PHP code, and build software using the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/installation/) and by following the [Getting Started Guide](http://devbay.net/sdk/guides/getting-started/).
 
