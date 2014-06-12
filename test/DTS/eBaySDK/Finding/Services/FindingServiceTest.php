@@ -5,20 +5,24 @@ use DTS\eBaySDK\HttpClient\HttpClient;
 
 class FindingServiceTest extends \PHPUnit_Framework_TestCase
 {
-    private $obj;
-
     protected function setUp()
     {
-        $this->obj = new FindingService(new HttpClient());
+        $this->service1 = new FindingService();
+        $this->service2 = new FindingService(array());
+        $this->service3 = new FindingService(array(), new HttpClient());
     }
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingService', $this->obj);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingService', $this->service1);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingService', $this->service2);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingService', $this->service3);
     }
 
     public function testExtendsBaseService()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingBaseService', $this->obj);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingBaseService', $this->service1);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingBaseService', $this->service2);
+        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Services\FindingBaseService', $this->service3);
     }
 }

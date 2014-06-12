@@ -19,40 +19,40 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Finding\Types\ItemAttribute $attribute
+ * @property \DTS\eBaySDK\Finding\Types\ItemAttribute[] $attribute
  * @property boolean $autoPay
  * @property string $charityId
  * @property string $compatibility
- * @property DTS\eBaySDK\Finding\Types\Condition $condition
+ * @property \DTS\eBaySDK\Finding\Types\Condition $condition
  * @property string $country
  * @property string $delimiter
- * @property DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
- * @property DTS\eBaySDK\Finding\Types\Distance $distance
- * @property DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
- * @property string $galleryPlusPictureUrl
- * @property string $galleryUrl
+ * @property \DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
+ * @property \DTS\eBaySDK\Finding\Types\Distance $distance
+ * @property \DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
+ * @property string[] $galleryPlusPictureURL
+ * @property string $galleryURL
  * @property string $globalId
  * @property boolean $isMultiVariationListing
  * @property string $itemId
- * @property DTS\eBaySDK\Finding\Types\ListingInfo $listingInfo
+ * @property \DTS\eBaySDK\Finding\Types\ListingInfo $listingInfo
  * @property string $location
- * @property string $paymentMethod
- * @property string $pictureUrllArge
- * @property string $pictureUrlsUperSize
+ * @property string[] $paymentMethod
+ * @property string $pictureURLLarge
+ * @property string $pictureURLSuperSize
  * @property string $postalCode
- * @property DTS\eBaySDK\Finding\Types\Category $primaryCategory
- * @property DTS\eBaySDK\Finding\Types\ProductId $productId
+ * @property \DTS\eBaySDK\Finding\Types\Category $primaryCategory
+ * @property \DTS\eBaySDK\Finding\Types\ProductId $productId
  * @property boolean $returnsAccepted
- * @property DTS\eBaySDK\Finding\Types\Category $secondaryCategory
- * @property DTS\eBaySDK\Finding\Types\SellerInfo $sellerInfo
- * @property DTS\eBaySDK\Finding\Types\SellingStatus $sellingStatus
- * @property DTS\eBaySDK\Finding\Types\ShippingInfo $shippingInfo
- * @property DTS\eBaySDK\Finding\Types\Storefront $storeInfo
+ * @property \DTS\eBaySDK\Finding\Types\Category $secondaryCategory
+ * @property \DTS\eBaySDK\Finding\Types\SellerInfo $sellerInfo
+ * @property \DTS\eBaySDK\Finding\Types\SellingStatus $sellingStatus
+ * @property \DTS\eBaySDK\Finding\Types\ShippingInfo $shippingInfo
+ * @property \DTS\eBaySDK\Finding\Types\Storefront $storeInfo
  * @property string $subtitle
  * @property string $title
  * @property boolean $topRatedListing
- * @property DTS\eBaySDK\Finding\Types\UnitPriceInfo $unitPrice
- * @property string $viewItemUrl
+ * @property \DTS\eBaySDK\Finding\Types\UnitPriceInfo $unitPrice
+ * @property string $viewItemURL
  */
 class SearchItem extends \DTS\eBaySDK\Types\BaseType
 {
@@ -120,13 +120,13 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'galleryInfoContainer'
         ),
-        'galleryPlusPictureUrl' => array(
+        'galleryPlusPictureURL' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'galleryPlusPictureURL'
         ),
-        'galleryUrl' => array(
+        'galleryURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -168,13 +168,13 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'paymentMethod'
         ),
-        'pictureUrllArge' => array(
+        'pictureURLLarge' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'pictureURLLarge'
         ),
-        'pictureUrlsUperSize' => array(
+        'pictureURLSuperSize' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -258,7 +258,7 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'unitPrice'
         ),
-        'viewItemUrl' => array(
+        'viewItemURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -271,18 +271,12 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

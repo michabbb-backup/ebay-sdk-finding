@@ -8,7 +8,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->httpClient = new HttpClient();
-        $this->service = new Service($this->httpClient);
+        $this->service = new Service(array(), $this->httpClient);
     }
 
     public function testCanBeCreated()
