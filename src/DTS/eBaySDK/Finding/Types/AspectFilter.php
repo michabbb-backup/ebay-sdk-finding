@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property string $aspectName
  * @property string[] $aspectValueName
- * @property string $delimiter
  */
 class AspectFilter extends \DTS\eBaySDK\Types\BaseType
 {
@@ -40,12 +39,6 @@ class AspectFilter extends \DTS\eBaySDK\Types\BaseType
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'aspectValueName'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 

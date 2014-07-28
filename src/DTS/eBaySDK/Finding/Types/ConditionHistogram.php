@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property \DTS\eBaySDK\Finding\Types\Condition $condition
  * @property integer $count
- * @property string $delimiter
  */
 class ConditionHistogram extends \DTS\eBaySDK\Types\BaseType
 {
@@ -40,12 +39,6 @@ class ConditionHistogram extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'count'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 

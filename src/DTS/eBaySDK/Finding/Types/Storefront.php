@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $delimiter
  * @property string $storeName
  * @property string $storeURL
  */
@@ -29,12 +28,6 @@ class Storefront extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
-        ),
         'storeName' => array(
             'type' => 'string',
             'unbound' => false,

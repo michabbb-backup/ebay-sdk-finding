@@ -23,7 +23,6 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property boolean $buyItNowAvailable
  * @property \DTS\eBaySDK\Finding\Types\Amount $buyItNowPrice
  * @property \DTS\eBaySDK\Finding\Types\Amount $convertedBuyItNowPrice
- * @property string $delimiter
  * @property \DateTime $endTime
  * @property boolean $gift
  * @property string $listingType
@@ -58,12 +57,6 @@ class ListingInfo extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'convertedBuyItNowPrice'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         ),
         'endTime' => array(
             'type' => 'DateTime',

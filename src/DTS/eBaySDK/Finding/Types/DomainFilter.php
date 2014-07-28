@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $delimiter
  * @property string[] $domainName
  */
 class DomainFilter extends \DTS\eBaySDK\Types\BaseType
@@ -28,12 +27,6 @@ class DomainFilter extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
-        ),
         'domainName' => array(
             'type' => 'string',
             'unbound' => true,

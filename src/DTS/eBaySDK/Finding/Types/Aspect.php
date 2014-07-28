@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $delimiter
  * @property string $name
  * @property \DTS\eBaySDK\Finding\Types\AspectValueHistogram[] $valueHistogram
  */
@@ -29,12 +28,6 @@ class Aspect extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
-        ),
         'name' => array(
             'type' => 'string',
             'unbound' => false,

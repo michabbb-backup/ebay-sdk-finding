@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property \DTS\eBaySDK\Finding\Types\CategoryHistogram[] $categoryHistogram
- * @property string $delimiter
  */
 class CategoryHistogramContainer extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,12 +32,6 @@ class CategoryHistogramContainer extends \DTS\eBaySDK\Types\BaseType
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'categoryHistogram'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 

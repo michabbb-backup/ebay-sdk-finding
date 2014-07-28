@@ -22,7 +22,6 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property integer $bidCount
  * @property \DTS\eBaySDK\Finding\Types\Amount $convertedCurrentPrice
  * @property \DTS\eBaySDK\Finding\Types\Amount $currentPrice
- * @property string $delimiter
  * @property string $sellingState
  * @property string $timeLeft
  */
@@ -49,12 +48,6 @@ class SellingStatus extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'currentPrice'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         ),
         'sellingState' => array(
             'type' => 'string',

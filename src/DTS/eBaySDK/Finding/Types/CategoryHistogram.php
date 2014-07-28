@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property \DTS\eBaySDK\Finding\Types\CategoryHistogram[] $childCategoryHistogram
  * @property integer $count
- * @property string $delimiter
  */
 class CategoryHistogram extends \DTS\eBaySDK\Finding\Types\Category
 {
@@ -40,12 +39,6 @@ class CategoryHistogram extends \DTS\eBaySDK\Finding\Types\Category
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'count'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 
