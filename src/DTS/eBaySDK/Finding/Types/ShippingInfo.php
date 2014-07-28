@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $delimiter
  * @property boolean $expeditedShipping
  * @property integer $handlingTime
  * @property boolean $intermediatedShipping
@@ -34,12 +33,6 @@ class ShippingInfo extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
-        ),
         'expeditedShipping' => array(
             'type' => 'boolean',
             'unbound' => false,

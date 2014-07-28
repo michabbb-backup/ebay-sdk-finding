@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property string $customId
- * @property string $delimiter
  * @property boolean $geoTargeting
  * @property string $networkId
  * @property string $trackingId
@@ -36,12 +35,6 @@ class Affiliate extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'customId'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         ),
         'geoTargeting' => array(
             'type' => 'boolean',

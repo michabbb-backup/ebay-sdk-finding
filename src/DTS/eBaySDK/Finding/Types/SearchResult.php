@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property integer $count
- * @property string $delimiter
  * @property \DTS\eBaySDK\Finding\Types\SearchItem[] $item
  */
 class SearchResult extends \DTS\eBaySDK\Types\BaseType
@@ -34,12 +33,6 @@ class SearchResult extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => true,
             'attributeName' => 'count'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         ),
         'item' => array(
             'type' => 'DTS\eBaySDK\Finding\Types\SearchItem',

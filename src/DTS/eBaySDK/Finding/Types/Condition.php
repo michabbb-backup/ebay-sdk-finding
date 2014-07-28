@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Finding\Types;
  *
  * @property string $conditionDisplayName
  * @property integer $conditionId
- * @property string $delimiter
  */
 class Condition extends \DTS\eBaySDK\Types\BaseType
 {
@@ -40,12 +39,6 @@ class Condition extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'conditionId'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 

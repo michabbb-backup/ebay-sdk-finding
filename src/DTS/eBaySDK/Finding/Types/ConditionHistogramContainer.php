@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property \DTS\eBaySDK\Finding\Types\ConditionHistogram[] $conditionHistogram
- * @property string $delimiter
  */
 class ConditionHistogramContainer extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,12 +32,6 @@ class ConditionHistogramContainer extends \DTS\eBaySDK\Types\BaseType
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'conditionHistogram'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         )
     );
 

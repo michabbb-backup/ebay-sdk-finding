@@ -25,7 +25,6 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property string $compatibility
  * @property \DTS\eBaySDK\Finding\Types\Condition $condition
  * @property string $country
- * @property string $delimiter
  * @property \DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
  * @property \DTS\eBaySDK\Finding\Types\Distance $distance
  * @property \DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
@@ -95,12 +94,6 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'country'
-        ),
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
         ),
         'discountPriceInfo' => array(
             'type' => 'DTS\eBaySDK\Finding\Types\DiscountPriceInfo',

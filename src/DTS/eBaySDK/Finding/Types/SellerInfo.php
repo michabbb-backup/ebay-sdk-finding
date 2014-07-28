@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $delimiter
  * @property string $feedbackRatingStar
  * @property integer $feedbackScore
  * @property double $positiveFeedbackPercent
@@ -32,12 +31,6 @@ class SellerInfo extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'delimiter' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'delimiter'
-        ),
         'feedbackRatingStar' => array(
             'type' => 'string',
             'unbound' => false,
