@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.1.2 (2014-07-28)
+------------------
+
+### Fixes
+
+* Remove unneeded properties. ([0d3e7c8](https://github.com/davidtsadler/ebay-sdk-finding/commit/0d3e7c859720170b52490f84b6623e8388bc0bfa)) [David T. Sadler]
+
 0.1.1 (2014-07-05)
 ------------------
 
