@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.1.3 (2014-08-25)
+------------------
+
+### Documentation
+
+* Update requirements to recommend 64 bit systems. ([7d03a31](https://github.com/davidtsadler/ebay-sdk-finding/commit/7d03a31ebf5b8d6a3c385068f5fe585840e2a0b3)) [David T. Sadler]
+
 0.1.2 (2014-07-28)
 ------------------
 
