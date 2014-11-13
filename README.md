@@ -28,17 +28,7 @@ This project enables PHP developers to use the [eBay API](https://go.developer.e
 
 ## Installation
 
-This SDK can be installed with [Composer](http://getcomposer.org/).
-
-  1. Add `dts/ebay-sdk-finding` as a dependency in your project's composer.json file.
-
-     ```javascript
-     {
-         "require": {
-             "dts/ebay-sdk-finding": "~0.1"
-         }
-     }
-     ```
+The SDK can be installed with [Composer](http://getcomposer.org/).
 
   1. Install Composer.
 
@@ -46,10 +36,10 @@ This SDK can be installed with [Composer](http://getcomposer.org/).
      curl -sS https://getcomposer.org/installer | php
      ```
 
-  1. Install the dependencies.
+  1. Install the SDK.
 
      ```
-     php composer.phar install
+     php composer.phar require dts/ebay-sdk-finding
      ```
 
   1. Require Composer's autoloader by adding the following line to your code.
