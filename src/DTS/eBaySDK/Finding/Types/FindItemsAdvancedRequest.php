@@ -26,7 +26,6 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
  * @property string[] $categoryId
  * @property boolean $descriptionSearch
- * @property \DTS\eBaySDK\Finding\Types\DomainFilter[] $domainFilter
  * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
  * @property string $keywords
  * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
@@ -54,12 +53,6 @@ class FindItemsAdvancedRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingSer
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'descriptionSearch'
-        ),
-        'domainFilter' => array(
-            'type' => 'DTS\eBaySDK\Finding\Types\DomainFilter',
-            'unbound' => true,
-            'attribute' => false,
-            'elementName' => 'domainFilter'
         ),
         'itemFilter' => array(
             'type' => 'DTS\eBaySDK\Finding\Types\ItemFilter',
