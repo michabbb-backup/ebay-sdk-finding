@@ -24,8 +24,6 @@ namespace DTS\eBaySDK\Finding\Types;
 /**
  *
  * @property \DTS\eBaySDK\Finding\Types\Aspect[] $aspect
- * @property string $domainDisplayName
- * @property string $domainName
  */
 class AspectHistogramContainer extends \DTS\eBaySDK\Types\BaseType
 {
@@ -38,18 +36,6 @@ class AspectHistogramContainer extends \DTS\eBaySDK\Types\BaseType
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'aspect'
-        ),
-        'domainDisplayName' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'domainDisplayName'
-        ),
-        'domainName' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'domainName'
         )
     );
 

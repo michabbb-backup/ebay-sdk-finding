@@ -31,6 +31,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property string $country
  * @property \DTS\eBaySDK\Finding\Types\DiscountPriceInfo $discountPriceInfo
  * @property \DTS\eBaySDK\Finding\Types\Distance $distance
+ * @property string[] $eekStatus
  * @property \DTS\eBaySDK\Finding\Types\GalleryInfoContainer $galleryInfoContainer
  * @property string[] $galleryPlusPictureURL
  * @property string $galleryURL
@@ -110,6 +111,12 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'distance'
+        ),
+        'eekStatus' => array(
+            'type' => 'string',
+            'unbound' => true,
+            'attribute' => false,
+            'elementName' => 'eekStatus'
         ),
         'galleryInfoContainer' => array(
             'type' => 'DTS\eBaySDK\Finding\Types\GalleryInfoContainer',
