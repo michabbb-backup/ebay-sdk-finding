@@ -1,6 +1,22 @@
 CHANGELOG
 =========
 
+0.2.0 (2014-11-26)
+------------------
+
+### API
+
+* Support API version 1.13.0. ([7516638](https://github.com/davidtsadler/ebay-sdk-finding/commit/7516638b78889090fb2c0480fa1d6ae818993512)) [David T. Sadler]
+
+### Documentation
+
+* State code is generated. ([c42e0f4](https://github.com/davidtsadler/ebay-sdk-finding/commit/c42e0f4965fd4fe88f118c76c55071b1ea8da854)) [David T. Sadler]
+* Update installation instructions in README. ([74924c3](https://github.com/davidtsadler/ebay-sdk-finding/commit/74924c36c36d0a6e52aee85780f8fce02298db8c)) [David T. Sadler]
+
+### Tests
+
+* Add PHP 5.6 and HHVM to travis settings. ([bb25f89](https://github.com/davidtsadler/ebay-sdk-finding/commit/bb25f898b252289bc1d5176bc5ad977a99cd7678)) [David T. Sadler]
+
 0.1.3 (2014-08-25)
 ------------------
 
