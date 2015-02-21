@@ -1,8 +1,12 @@
-CHANGELOG
-=========
+# CHANGELOG
 
-0.2.0 (2014-11-26)
-------------------
+## Unreleased
+
+### Features
+
+* Allow manual installation of SDK via PHP Phar or Zip archive.
+
+## 0.2.0 - 2014-11-26
 
 ### API
 
@@ -17,22 +21,19 @@ CHANGELOG
 
 * Add PHP 5.6 and HHVM to travis settings. ([bb25f89](https://github.com/davidtsadler/ebay-sdk-finding/commit/bb25f898b252289bc1d5176bc5ad977a99cd7678)) [David T. Sadler]
 
-0.1.3 (2014-08-25)
-------------------
+## 0.1.3 - 2014-08-25
 
 ### Documentation
 
 * Update requirements to recommend 64 bit systems. ([7d03a31](https://github.com/davidtsadler/ebay-sdk-finding/commit/7d03a31ebf5b8d6a3c385068f5fe585840e2a0b3)) [David T. Sadler]
 
-0.1.2 (2014-07-28)
-------------------
+## 0.1.2 - 2014-07-28
 
 ### Fixes
 
 * Remove unneeded properties. ([0d3e7c8](https://github.com/davidtsadler/ebay-sdk-finding/commit/0d3e7c859720170b52490f84b6623e8388bc0bfa)) [David T. Sadler]
 
-0.1.1 (2014-07-05)
-------------------
+## 0.1.1 - 2014-07-05
 
 ### Refactoring
 

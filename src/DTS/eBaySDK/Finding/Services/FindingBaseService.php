@@ -23,6 +23,11 @@ namespace DTS\eBaySDK\Finding\Services;
 class FindingBaseService extends \DTS\eBaySDK\Services\BaseService
 {
     /**
+     * @var string Current version of the SDK
+     */
+    const VERSION = '0.2.0';
+
+    /**
      * Constants for the various HTTP headers required by the API.
      */
     const HDR_API_VERSION = 'X-EBAY-SOA-SERVICE-VERSION';
