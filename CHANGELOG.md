@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 0.2.2 - 2015-08-02
 
 ### END OF LIFE NOTICE
 
